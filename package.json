@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "release": "release patch",
-    "build": "microbundle --target node -d dist/ -o index.js",
+    "build": "microbundle --target node",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
