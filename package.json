@@ -1,6 +1,6 @@
 {
   "name": "mongodb-datasource-apollo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A mongodb implementation of the apollo datasource",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
