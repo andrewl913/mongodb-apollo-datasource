@@ -1,0 +1,50 @@
+{
+  "name": "mongodb-datasource-apollo",
+  "version": "0.0.1",
+  "description": "A mongodb implementation of the apollo datasource",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "release": "release patch",
+    "build": "rimraf dist && microbundle --target node -d dist/ -o index.js",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewl913/mongodb-apollo-datasource"
+  },
+  "bugs": {
+    "url": "https://github.com/andrewl913/mongodb-apollo-datasource/issues"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "module": "commonjs",
+  "keywords": [
+    "mongodb",
+    "apollo",
+    "datasource",
+    "graphql"
+  ],
+  "author": "andrewl913",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-datasource": "^3.3.1",
+    "dataloader": "^2.1.0",
+    "release": "^6.3.1",
+    "sift": "^4.0.0",
+    "sort-keys": "^4.2.0"
+  },
+  "peerDependencies": {
+    "mongodb": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.36",
+    "microbundle": "^0.15.0",
+    "mongodb": "^4.6.0",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.2"
+  }
+}
