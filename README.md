@@ -9,7 +9,7 @@ See more details here: https://www.apollographql.com/docs/apollo-server/data/dat
 - Includes caching and batching with DataLoader! 📦
 - Compatible with MongoDB 🍃
 
-###Usage
+### Usage
 
 ```typescript
 class ProductsDataSource extends MongoDataSource<ProductDocument, Context> {
